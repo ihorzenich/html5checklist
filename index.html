@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="html5checklist : Чеклист верстки">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>html5checklist</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/delka/html5checklist">View on GitHub</a>
+
+          <h1 id="project_title">html5checklist</h1>
+          <h2 id="project_tagline">Чеклист верстки</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/delka/html5checklist/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/delka/html5checklist/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="Чеклист-верстки" class="anchor" href="#%D0%A7%D0%B5%D0%BA%D0%BB%D0%B8%D1%81%D1%82-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Чеклист верстки</h1>
+
+<p>Для того чтобы отдавать вёрстку клиенту, достаточно соблюдения первых 5 пунктов.
+Для выдачи в продакшен — первых 6.</p>
+
+<ol>
+<li><strong>Соответствие макету</strong></li>
+<li><strong>Кроссбраузерность, кодировка и DOCTYPE</strong></li>
+<li><strong>Валидность, доступность, микроформаты</strong></li>
+<li><strong>Независимость блоков в CSS: минимизация каскада, использование техник БЭМ/MCSS/SMACSS</strong></li>
+<li><p><strong>Сайт должен нормально смотреться во всех стандартных разрешениях от 1024 и выше, не иметь горизонтального скролла и вписываться в экран мобильных устройств</strong></p></li>
+<li><p>Корректная работа при вбивании реального текста, надёжность вёрстки</p></li>
+<li>Проверка и оптимизация скорости загрузки</li>
+<li>Наличие Win/Mac/Linux-аналогов шрифтов</li>
+<li>Доступность при выключенных(загружающихся) картинках</li>
+<li>HTML5 формы, линковка, валидация</li>
+<li>Семантичность. Отсутствие глупостей в html и css, единообразие, аккуратность</li>
+<li>Правильная структура заголовков (H1,H2,… и т.д. и TITLE)</li>
+<li>Работоспособность при выключенном (незагруженном) JavaScript</li>
+<li>Работоспособность при выключенном Flash</li>
+<li>Отсутствие багов при увеличенном шрифте</li>
+</ol>
+
+<p>Подробности по каждому пункту: <a href="http://habrahabr.ru/post/114256/">http://habrahabr.ru/post/114256/</a></p>
+
+<h2>
+<a id="Важные-мелочи" class="anchor" href="#%D0%92%D0%B0%D0%B6%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B5%D0%BB%D0%BE%D1%87%D0%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Важные мелочи</h2>
+
+<ul>
+<li>Лого на внутряках должно вести на титулку. На титулке logo = h1, на внутряках H1=заголовок контента, а Logo=div</li>
+<li>У каждой страницы должен быть свой уникальный TITLE формата About Us - %CompanyName%</li>
+<li>Все страницы должны быть слинкованы и проверены на наличие битых ссылок.</li>
+<li>Все ссылки должны как-то реагировать на :hover, :active и :focus — показыванием/убиранием подчёркивания, сменой цвета, чем угодно. У всех ссылок, кроме пунктов меню, должна быть реакция на :visited</li>
+<li>Проверять что все интерактивные элементы страницы что должны работать — работают.</li>
+<li>«Контент в начале страницы» — содержимое страницы должно идти в начале кода, до всяких сайдбаров и прочего.</li>
+<li>Копирайт должен быть написан правильно.</li>
+<li>Должны быть favicon.ico (желательно с включенными внутрь неё 32x32, 48x48 и 64×64 вариациями) и apple-touch-icon</li>
+<li>В вёрстке не должны оставаться закомментированные «на всякий случай» куски кода, лишние неиспользуемые файлы, старые версии файлов и т.п. Все бекапы можно вытянуть из системы контроля версий (например SVN), а на живом проекте «мусор» потом мешает разобраться как что работает.</li>
+<li>Размеры для блоков, чьи размеры зависят от содержащегося в них текста, нужно задавать в em, а не px.</li>
+<li>Если url ссылки неизвестен, то он должен быть равен её анкору, написанному латиницей с заменой пробелов/спецсимволов на тире.</li>
+<li>Skype-плагин не должен ломать вёрстку</li>
+<li>Ресайз textarea не должен ломать вёрстку</li>
+<li>При проверке frontend в целом — 404-страница должна отдаваться с кодом 404 а не 200.</li>
+<li>Нужно подстраховываться фиксируя в css размеры картинок, выводящихся программно.</li>
+<li>Проверка орфографии Word'ом или Орфографом, желательно — оттипографить контент.</li>
+<li>Ссылки на чужие сайты должны быть с target=«blank», желательно выделять их иконкой «внешняя ссылка».</li>
+<li>Разумеется картинки должны быть в отдельной папке, css — в отдельной и js — в отдельной.</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">html5checklist maintained by <a href="https://github.com/delka">delka</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-6535082-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
