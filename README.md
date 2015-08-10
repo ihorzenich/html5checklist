@@ -79,4 +79,5 @@
   <li>Проверка орфографии Word&rsquo;ом или <a href="http://www.artlebedev.ru/tools/orfograf/">Орфографом</a>, желательно&nbsp;&mdash; <a href="http://www.artlebedev.ru/tools/typograf/">оттипографить</a> контент.</li>
   <li>Ссылки на&nbsp;чужие сайты должны быть с&nbsp;<code>target="blank"</code>, желательно выделять их&nbsp;иконкой &laquo;внешняя ссылка&raquo;.</li>
   <li>Разумеется картинки должны быть в&nbsp;отдельной папке, css&nbsp;&mdash; в&nbsp;отдельной и&nbsp;js&nbsp;&mdash; в&nbsp;отдельной. Графика, не являющаяся частью дизайна (всякие илююстрации, фото в новостях и т.д.) — нужно положить в отдельную папку, например userfiles.</li>
+  <li>Изображения должны масштабироваться в зависимости от размера окна <code>(max-width:100%; height:auto;)</code></li>
 </ul>
