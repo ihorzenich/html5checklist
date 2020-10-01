@@ -22,6 +22,8 @@
 15. Работоспособность при выключенном (незагруженном) JavaScript
 16. Работоспособность при выключенном Flash
 17. Отсутствие багов при увеличенном шрифте
+18. Write clear code don't mess the code.
+19. Write code step by step in symetrical order.
 
 <h2>13. &quot;Плохо&quot;/&quot;Хорошо&quot;</h2>
 Важно понимать что семантика&nbsp;&mdash; может быть не&nbsp;только в&nbsp;используемых элементах, но&nbsp;и&nbsp;в&nbsp;именах классов. И&nbsp;БЭМ-иерархия классов&nbsp;&mdash; это новый уровень семантики.
