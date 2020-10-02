@@ -1,6 +1,28 @@
-/*
-  Examples of good css:
-   - Naming conventions
-   - Codestyle
-   - BEM dialect
-*/
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Examples</title>
+        <!-- CSS starts here -->
+        <style>
+            /* Tergeting Button with id */
+            #btn{
+                background: black;
+                color: white;
+                border: 2px solid rgb(156, 142, 142);
+                padding: 4px;
+                border-radius: 8px;
+            }
+            /* CSS on hover over button */
+            #btn:hover{
+                background: #ddd;
+                color: rgb(51, 47, 47);
+                cursor: pointer;
+            }
+        </style>
+        <!-- CSS Ends Here -->
+    </head>
+    <body>
+        <h2>This is button</h2>
+        <button id="btn" type="submit">Click Me!</button>
+    </body>
+</html>
